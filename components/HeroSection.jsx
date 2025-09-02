@@ -85,7 +85,7 @@ export default function Hero() {
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
       >
         <img
-          src="src\assets\my.png"
+          src="public\my.png"
           alt="Hero"
           className="rounded-full shadow-lg w-40 sm:w-52 md:w-64 lg:w-90 object-cover"
         />
