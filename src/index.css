@@ -1,0 +1,222 @@
+/* Navbar container */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+*{
+font-family: 'Poppins', sans-serif;
+}
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #ffffff;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+  animation: slideDown 0.8s ease-out;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 80px;
+}
+
+/* Logo */
+nav h1 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #4f46e5;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+nav h1 span {
+  color: #333;
+}
+
+nav h1:hover {
+  transform: scale(1.1);
+}
+
+/* Nav links */
+nav ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  color: #444;
+  transition: all 0.3s ease;
+}
+
+/* Hover effects */
+nav ul li a:hover {
+  color: #4f46e5;
+  transform: translateY(-3px);
+}
+
+/* Underline animation */
+nav ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  height: 2px;
+  width: 0;
+  background: #4f46e5;
+  transition: width 0.3s ease;
+}
+
+nav ul li:hover::after {
+  width: 100%;
+}
+
+
+.hero {
+  min-height: 100vh; /* Always fit to screen height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 40px 40px; /* Top padding for navbar space */
+  background: linear-gradient(to right, #f9fafb, #f3f4f6);
+  overflow: hidden;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 100px 80px 40px;
+  }
+}
+
+.hero-text {
+  flex: 1;
+  animation: slideInLeft 1s ease forwards;
+}
+
+.hero-text h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #222;
+  line-height: 1.2;
+}
+
+.hero-text h1 span {
+  color: #4f46e5; /* Indigo */
+}
+
+.hero-text h2 {
+  margin-top: 15px;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #444;
+}
+
+.hero-text p {
+  margin-top: 20px;
+  max-width: 500px;
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 12px 24px;
+  background: #4f46e5;
+  color: white;
+  font-weight: 500;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 6px 15px rgba(79, 70, 229, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+  transform: translateY(-6px) scale(1.05);
+  box-shadow: 0 12px 25px rgba(79, 70, 229, 0.5);
+}
+
+.hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  animation: slideInRight 1s ease forwards;
+}
+
+.image-container {
+  width: 280px;
+  height: 280px;
+  border: 4px solid #4f46e5;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  transition: transform 0.5s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.08) translateY(-8px);
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Slide down animation */
+@keyframes slideDown {
+  from {
+    transform: translateY(-80px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
