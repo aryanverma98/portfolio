@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-
 export default function Hero() {
   return (
     <section
@@ -86,7 +85,7 @@ export default function Hero() {
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
       >
         <img
-          src="src\assets\Picsart_25-09-02_15-39-05-107.png"
+          src="src\assets\my.png"
           alt="Hero"
           className="rounded-full shadow-lg w-40 sm:w-52 md:w-64 lg:w-90 object-cover"
         />
