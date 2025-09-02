@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
-
 export default function Hero() {
   return (
     <section
@@ -8,7 +7,7 @@ export default function Hero() {
       className="min-h-screen flex flex-col md:flex-row items-center justify-center text-center md:text-left px-6 md:px-20 bg-gradient-to-r from-blue-50 to-indigo-100"
     >
       {/* Left Content */}
-      <div className="flex-1 max-w-xl mt-12 md:mt-32 md:ml-10">
+      <div className="flex-1 max-w-xl mt-50 md:mt-32 md:ml-10">
         {/* Title */}
         <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
           Hi, I’m <span className="text-blue-600">Aryan Verma</span>
@@ -85,7 +84,6 @@ export default function Hero() {
         animate={{ y: [0, -20, 0] }}
         transition={{ repeat: Infinity, duration: 4, ease: "easeInOut" }}
       >
-        {/* Image from public folder */}
         <img
           src="src\assets\my.png"
           alt="Hero"
