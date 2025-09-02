@@ -114,4 +114,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;  change the hamburger navlinks 
+export default Navbar;  
