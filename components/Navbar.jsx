@@ -25,7 +25,10 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo */}
         <div>
-          <a href="#home" className=" text-2xl md:text-3xl font-extrabold text-blue-600  ">
+          <a
+            href="#home"
+            className="text-2xl md:text-3xl font-extrabold text-blue-600"
+          >
             ARYAN
           </a>
         </div>
@@ -90,20 +93,27 @@ const Navbar = () => {
                 <HiX />
               </button>
 
-              {/* Sidebar links with cool animations */}
-              <nav className="mt-20 flex flex-col gap-8 items-center py-10">
+              {/* Sidebar links */}
+              <nav className="mt-20 flex flex-col gap-6 items-center py-10">
                 {navItems.map((item, index) => (
-                 <motion.a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                onClick={() => setIsOpen(false)}
-                initial={{ x: 50, opacity: 0 }}
-                animate={{ x: 0, opacity: 1 }}
-                transition={{ delay: index * 0.1, type: "spring", stiffness: 120 }}
-                className="w-full text-center text-2xl font-bold text-indigo-700 py-2 border-b border-gray-300 hover:border-yellow-300 transition-colors"
-              >
-      {item}
-    </motion.a>
+                  <motion.a
+                    key={item}
+                    href={`#${item.toLowerCase()}`}
+                    onClick={() => setIsOpen(false)}
+                    initial={{ x: 50, opacity: 0 }}
+                    animate={{ x: 0, opacity: 1 }}
+                    transition={{
+                      delay: index * 0.1,
+                      type: "spring",
+                      stiffness: 120,
+                    }}
+                    className="relative w-full text-center text-lg font-medium text-white py-2
+                               after:absolute after:left-1/2 after:-translate-x-1/2 after:bottom-0 
+                               after:w-0 after:h-[2px] after:bg-yellow-300 after:transition-all 
+                               after:duration-300 hover:after:w-2/3 hover:text-yellow-300"
+                  >
+                    {item}
+                  </motion.a>
                 ))}
               </nav>
             </motion.div>
