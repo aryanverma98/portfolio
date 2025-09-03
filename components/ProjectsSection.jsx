@@ -47,7 +47,7 @@ const projects = [
     title: "Portfolio Website",
     desc: "My personal portfolio showcasing skills, projects, and contact details.",
     image: portImage,
-    links: { demo: "#", github: "https://github.com/aryanverma98/myportfolio" },
+    links: { demo: "https://aryanpo.netlify.app", github: "https://github.com/aryanverma98/portfolio" },
   },
 ];
 
