@@ -95,7 +95,7 @@ const Navbar = () => {
               </button>
 
               {/* Sidebar links */}
-              <nav className="mt-16 flex flex-col py-15 gap-10 items-center h-250 ">
+              <nav className="mt-16 flex flex-col py-10 gap-10 items-center h-250 ">
                 {navItems.map((item, index) => (
                   <motion.a
                     key={item}
@@ -108,14 +108,14 @@ const Navbar = () => {
                       type: "spring",
                       stiffness: 120,
                     }}
-                    className="flex items-center justify-center w-full text-center text-2xl font-bold text-blue-600 py-4 border-b border-gray-300 transition-colors"
+                    className="flex items-center justify-center w-full text-center text-2xl font-bold text-blue-800 py-4 border-b border-gray-300 transition-colors"
                   >
                     {item}
                   </motion.a>
                 ))}
 
                 {/* ✅ Social Media Icons below Contact */}
-                <div className="flex justify-center gap-6 mt-10  ">
+                <div className="flex justify-center gap-6 mt-7  ">
                   <motion.a
                     href="https://www.linkedin.com/in/aryan-verma-7545a4303"
                     target="_blank"
