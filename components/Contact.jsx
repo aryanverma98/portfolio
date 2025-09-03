@@ -6,7 +6,7 @@ const contacts = [
   {
     type: "Email",
     value: "@14vermaaryan.com",
-    link: "@14vermaaryan.com",
+    link: "https://mail.google.com/mail/u/0/#inbox?compose=new",
     icon: <FaEnvelope size={40} className="text-red-500" />,
   },
   {
@@ -18,7 +18,7 @@ const contacts = [
   {
     type: "Location",
     value: "Kanpur, Uttar Pradesh, India",
-    link: "#",
+    link: "https://www.google.com/maps/place/Kanpur,+Uttar+Pradesh/@26.44715,80.2558096,12z/data=!3m1!4b1!4m6!3m5!1s0x399c4770b127c46f:0x1778302a9fbe7b41!8m2!3d26.449923!4d80.3318736!16zL20vMDFfcTdo?entry=ttu&g_ep=EgoyMDI1MDgyNS4wIKXMDSoASAFQAw%3D%3D",
     icon: <FaMapMarkerAlt size={40} className="text-blue-600" />,
   },
   {
