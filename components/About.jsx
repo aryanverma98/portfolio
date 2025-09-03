@@ -15,7 +15,7 @@ const About = () => {
         <div>
           <h3 className="text-2xl font-bold mb-4">Hi, I'm Aryan Verma</h3>
           <p className="text-gray-700 leading-relaxed mb-4">
-            I'm a Frontend Developer and student at Axis College, Kanpur. My focus is on creating
+            I'm a creative and detail-oriented Frontend Developer. My focus is on creating
             user-friendly, responsive, and visually appealing web applications. I specialize in
             React, Tailwind CSS, and JavaScript, and I enjoy solving real-world problems through
             elegant code and design.
