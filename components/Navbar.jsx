@@ -95,7 +95,7 @@ const Navbar = () => {
               </button>
 
               {/* Sidebar links */}
-              <nav className="mt-16 flex flex-col py-10 gap-10 items-center h-250 ">
+              <nav className="mt-16 flex flex-col py-10 gap-7 items-center h-250 ">
                 {navItems.map((item, index) => (
                   <motion.a
                     key={item}
@@ -108,7 +108,7 @@ const Navbar = () => {
                       type: "spring",
                       stiffness: 120,
                     }}
-                    className="flex items-center justify-center w-full text-center text-2xl font-bold text-blue-800 py-4 border-b border-gray-300 transition-colors"
+                    className="flex items-center justify-center w-full text-center text-2xl font-bold text-blue-800 py-3 border-b border-gray-300 transition-colors"
                   >
                     {item}
                   </motion.a>
