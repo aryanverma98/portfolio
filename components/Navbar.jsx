@@ -115,7 +115,7 @@ const Navbar = () => {
                 ))}
 
                 {/* ✅ Social Media Icons below Contact */}
-                <div className="flex justify-center gap-6 mt-7  ">
+                <div className="flex justify-center gap-6 mt-4  ">
                   <motion.a
                     href="https://www.linkedin.com/in/aryan-verma-7545a4303"
                     target="_blank"
