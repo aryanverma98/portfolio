@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { FaEye, FaGithub, FaExternalLinkAlt } from "react-icons/fa";
-import foodImage from "../src/assets/shoes.jpg";
+import foodImage from "../src/assets/shoes.png";
 import todoImage from "../src/assets/todo.jpg";
 import calImage from "../src/assets/cal.jpg";
 import amazonImage from "../src/assets/amazon.png";
