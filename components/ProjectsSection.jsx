@@ -12,7 +12,7 @@ const projects = [
     title: "E-commerce Website",
     desc: "A shopping platform with product pages, cart, and secure checkout system.",
     image: foodImage,
-    links: { demo: "https://arybites.netlify.app/", github: "https://github.com/aryanverma98/food-site" },
+    links: { demo: "https://arynwalks.netlify.app/", github: "https://github.com/aryanverma98/food-site" },
   },
   {
     category: "Web App",
